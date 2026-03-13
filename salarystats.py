@@ -27,7 +27,7 @@ class SalaryStats:
     def variance(self):
         x_mean = self.mean()
         deviations = sum((x - x_mean) ** 2 for x in self.data)
-        return deviations / (len(self.data) - 1) if len(self.data) >=2 else 0
+        return deviations / (len(self.data) - 1) if len(self.data) >= 2 else 0
 
     def standard_deviation(self):
         return math.sqrt(self.variance())
