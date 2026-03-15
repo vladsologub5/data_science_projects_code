@@ -39,7 +39,7 @@ class SalaryStats:
         sep1 = "-" * 10 + " Центральные тенденции " + "-" * 10 + "\n"
         sep2 = "-" * 16 + " Вариация " + "-" * 17 + "\n"
 
-        centr_tend = (f"Средняя зарплата: {self.mean()}\n"
+        central_tend = (f"Средняя зарплата: {self.mean()}\n"
                       f"Медианная зарплата: {self.median()}\n"
                       f"10-й процентиль: {self.quantile(0.10)}\n"
                       f"25-й процентиль: {self.quantile(0.25)}\n"
@@ -52,7 +52,7 @@ class SalaryStats:
                      f"Стандартное отклонение: {self.standard_deviation()}\n"
                      f"Интерквартильный размах: {self.interquartile_range()}\n")
 
-        return sep1 + centr_tend + "\n" + sep2 + variation
+        return sep1 + central_tend + "\n" + sep2 + variation
 
 
 
